@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b4a48661454590e4d57c5763b91ac76 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6b4a48661454590e4d57c5763b91ac76" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6b4a48661454590e4d57c5763b91ac76 = L.map(
+                "map_6b4a48661454590e4d57c5763b91ac76",
+                {
+                    center: [35.3190825, 139.552331],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_08d0d7f13cef663585677a309291ad0e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_08d0d7f13cef663585677a309291ad0e.addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var marker_4dff68179c7a6eb2d3d62d997ef7641b = L.marker(
+                [35.3190825, 139.552331],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_8ad40dfe734d6034011fc3540b122f40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86a640e4ca90350c7d2d547f92ac99d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b357f6940692b1f60bf4eec894388829 = $(`<div id="html_b357f6940692b1f60bf4eec894388829" style="width: 100.0%; height: 100.0%;">HOTEL: ホテルメトロポリタン鎌倉 Rating: 3.48</div>`)[0];
+                popup_86a640e4ca90350c7d2d547f92ac99d4.setContent(html_b357f6940692b1f60bf4eec894388829);
+            
+        
+
+        marker_4dff68179c7a6eb2d3d62d997ef7641b.bindPopup(popup_86a640e4ca90350c7d2d547f92ac99d4)
+        ;
+
+        
+    
+    
+                marker_4dff68179c7a6eb2d3d62d997ef7641b.setIcon(icon_8ad40dfe734d6034011fc3540b122f40);
+            
+    
+            var marker_9ed0059c5e0ca79604d239162d3742dd = L.marker(
+                [35.3247228, 139.5548281],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_79ef255587b32eaaeb9e578a4d14edd1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e20021688584277a403929e8a6f007e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbc309ebb4c467cb2f119f713c9c70bf = $(`<div id="html_dbc309ebb4c467cb2f119f713c9c70bf" style="width: 100.0%; height: 100.0%;">鎌倉文華館 鶴岡ミュージアム (museum)</div>`)[0];
+                popup_e20021688584277a403929e8a6f007e5.setContent(html_dbc309ebb4c467cb2f119f713c9c70bf);
+            
+        
+
+        marker_9ed0059c5e0ca79604d239162d3742dd.bindPopup(popup_e20021688584277a403929e8a6f007e5)
+        ;
+
+        
+    
+    
+                marker_9ed0059c5e0ca79604d239162d3742dd.setIcon(icon_79ef255587b32eaaeb9e578a4d14edd1);
+            
+    
+            var marker_b27a9aa65b7691c85e0fdbf6c1d5480b = L.marker(
+                [35.3198952, 139.544038],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_ecaa9fb9b47fc6aa07f68fa85d33d7b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_487f70182726ffa83bc6914017a38e1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d933ee20dfa429c93904db074c06108 = $(`<div id="html_5d933ee20dfa429c93904db074c06108" style="width: 100.0%; height: 100.0%;">鎌倉恩寵教会 (place_of_worship)</div>`)[0];
+                popup_487f70182726ffa83bc6914017a38e1b.setContent(html_5d933ee20dfa429c93904db074c06108);
+            
+        
+
+        marker_b27a9aa65b7691c85e0fdbf6c1d5480b.bindPopup(popup_487f70182726ffa83bc6914017a38e1b)
+        ;
+
+        
+    
+    
+                marker_b27a9aa65b7691c85e0fdbf6c1d5480b.setIcon(icon_ecaa9fb9b47fc6aa07f68fa85d33d7b2);
+            
+    
+            var marker_6fbc2a467f6fe1e4f3c15c1b643ceee0 = L.marker(
+                [35.3254833, 139.5560434],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_d70d1879519d0817978612fa4a542406 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_786be7706ef2bf5d7163fde37644cc49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd0bcafd977e2401f3028c56b540e8ac = $(`<div id="html_fd0bcafd977e2401f3028c56b540e8ac" style="width: 100.0%; height: 100.0%;">舞殿 (place_of_worship)</div>`)[0];
+                popup_786be7706ef2bf5d7163fde37644cc49.setContent(html_fd0bcafd977e2401f3028c56b540e8ac);
+            
+        
+
+        marker_6fbc2a467f6fe1e4f3c15c1b643ceee0.bindPopup(popup_786be7706ef2bf5d7163fde37644cc49)
+        ;
+
+        
+    
+    
+                marker_6fbc2a467f6fe1e4f3c15c1b643ceee0.setIcon(icon_d70d1879519d0817978612fa4a542406);
+            
+    
+            var marker_da0ed200fafdf8c06b3e56727b3a425f = L.marker(
+                [35.3251675, 139.5559376],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_6643b89ea7ba0f23b870edbbfef7e3bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c409a48768fa13a402807ebf0ae5335 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05f6f4fc995761b112cc4ae07e43d74d = $(`<div id="html_05f6f4fc995761b112cc4ae07e43d74d" style="width: 100.0%; height: 100.0%;">鶴岡八幡宮 (place_of_worship)</div>`)[0];
+                popup_9c409a48768fa13a402807ebf0ae5335.setContent(html_05f6f4fc995761b112cc4ae07e43d74d);
+            
+        
+
+        marker_da0ed200fafdf8c06b3e56727b3a425f.bindPopup(popup_9c409a48768fa13a402807ebf0ae5335)
+        ;
+
+        
+    
+    
+                marker_da0ed200fafdf8c06b3e56727b3a425f.setIcon(icon_6643b89ea7ba0f23b870edbbfef7e3bd);
+            
+    
+            var marker_13b07b5ba96797ac11f53295906f0bc8 = L.marker(
+                [35.3255009, 139.5563851],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_7fee62a94288de6a9e5585b44d7f40ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02bb9bfa1bb64b58d865f1e61ab2e6bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a62d57e7ae5be1d02d301f386c8f82ed = $(`<div id="html_a62d57e7ae5be1d02d301f386c8f82ed" style="width: 100.0%; height: 100.0%;">若宮 (place_of_worship)</div>`)[0];
+                popup_02bb9bfa1bb64b58d865f1e61ab2e6bb.setContent(html_a62d57e7ae5be1d02d301f386c8f82ed);
+            
+        
+
+        marker_13b07b5ba96797ac11f53295906f0bc8.bindPopup(popup_02bb9bfa1bb64b58d865f1e61ab2e6bb)
+        ;
+
+        
+    
+    
+                marker_13b07b5ba96797ac11f53295906f0bc8.setIcon(icon_7fee62a94288de6a9e5585b44d7f40ea);
+            
+    
+            var marker_c026a1b34ac82004473619c5384ee6d7 = L.marker(
+                [35.3241764, 139.5568948],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_bb73a2408c9e2fb6f9a921f1d50f9fd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f1b6cac8d797e5361e6e47bb3123cc2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8e39df1dab9a46b50c7e50266014bea = $(`<div id="html_f8e39df1dab9a46b50c7e50266014bea" style="width: 100.0%; height: 100.0%;">齋館 (place_of_worship)</div>`)[0];
+                popup_f1b6cac8d797e5361e6e47bb3123cc2e.setContent(html_f8e39df1dab9a46b50c7e50266014bea);
+            
+        
+
+        marker_c026a1b34ac82004473619c5384ee6d7.bindPopup(popup_f1b6cac8d797e5361e6e47bb3123cc2e)
+        ;
+
+        
+    
+    
+                marker_c026a1b34ac82004473619c5384ee6d7.setIcon(icon_bb73a2408c9e2fb6f9a921f1d50f9fd3);
+            
+    
+            var marker_ddf325c3371bf553e9df9794f1236b13 = L.marker(
+                [35.3246687, 139.5570209],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_3a539ce94a52cfc35628372dd31f4643 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12c4ca8fa13f6fcdff039629bc32ec4f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8df713b3034734af9080d7d8574b4b99 = $(`<div id="html_8df713b3034734af9080d7d8574b4b99" style="width: 100.0%; height: 100.0%;">市立鎌倉国宝館 (museum)</div>`)[0];
+                popup_12c4ca8fa13f6fcdff039629bc32ec4f.setContent(html_8df713b3034734af9080d7d8574b4b99);
+            
+        
+
+        marker_ddf325c3371bf553e9df9794f1236b13.bindPopup(popup_12c4ca8fa13f6fcdff039629bc32ec4f)
+        ;
+
+        
+    
+    
+                marker_ddf325c3371bf553e9df9794f1236b13.setIcon(icon_3a539ce94a52cfc35628372dd31f4643);
+            
+    
+            var marker_638adc0c28198aacd76f52f913dea438 = L.marker(
+                [35.3275664, 139.5557557],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_fcba9dede3664e3a8c3aa7bfff417e73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_317cb36ae2f3668b68c86fbcf43647f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dae30a0ee168796fd80705206bbe7736 = $(`<div id="html_dae30a0ee168796fd80705206bbe7736" style="width: 100.0%; height: 100.0%;">神奈川県立近代美術館鎌倉別館 (museum)</div>`)[0];
+                popup_317cb36ae2f3668b68c86fbcf43647f3.setContent(html_dae30a0ee168796fd80705206bbe7736);
+            
+        
+
+        marker_638adc0c28198aacd76f52f913dea438.bindPopup(popup_317cb36ae2f3668b68c86fbcf43647f3)
+        ;
+
+        
+    
+    
+                marker_638adc0c28198aacd76f52f913dea438.setIcon(icon_fcba9dede3664e3a8c3aa7bfff417e73);
+            
+    
+            var marker_a9ccc9c5c82a20f952a3ba874afc7475 = L.marker(
+                [35.3262728, 139.5555026],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_657603c98057530ad447558f41611e17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4df4f532890682eb1836cd1eb7fa239f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02b992d75316f8cfcc2a491d29d9bbee = $(`<div id="html_02b992d75316f8cfcc2a491d29d9bbee" style="width: 100.0%; height: 100.0%;">自動車祈祷所 (place_of_worship)</div>`)[0];
+                popup_4df4f532890682eb1836cd1eb7fa239f.setContent(html_02b992d75316f8cfcc2a491d29d9bbee);
+            
+        
+
+        marker_a9ccc9c5c82a20f952a3ba874afc7475.bindPopup(popup_4df4f532890682eb1836cd1eb7fa239f)
+        ;
+
+        
+    
+    
+                marker_a9ccc9c5c82a20f952a3ba874afc7475.setIcon(icon_657603c98057530ad447558f41611e17);
+            
+    
+            var marker_6ffeda6ee1a463cc625b1c937177e6f6 = L.marker(
+                [35.3221172, 139.5581876],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_615579cf2e7c022a9168c6c408f07571 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93119592b8830b146ecad4ec7ce97360 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12b5980455cb81e1e299993fbdecbd17 = $(`<div id="html_12b5980455cb81e1e299993fbdecbd17" style="width: 100.0%; height: 100.0%;">宝戒寺 (place_of_worship)</div>`)[0];
+                popup_93119592b8830b146ecad4ec7ce97360.setContent(html_12b5980455cb81e1e299993fbdecbd17);
+            
+        
+
+        marker_6ffeda6ee1a463cc625b1c937177e6f6.bindPopup(popup_93119592b8830b146ecad4ec7ce97360)
+        ;
+
+        
+    
+    
+                marker_6ffeda6ee1a463cc625b1c937177e6f6.setIcon(icon_615579cf2e7c022a9168c6c408f07571);
+            
+    
+            var marker_c208eaa1d0b05e8cd9ea2d145c6b6916 = L.marker(
+                [35.3194015, 139.5529265],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_efde93221258311b7a2714e8a21afea3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a00087afbace635dcee9d3823e9bc75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b509127c34fa3cc82389862fd72b1e0 = $(`<div id="html_6b509127c34fa3cc82389862fd72b1e0" style="width: 100.0%; height: 100.0%;">鎌倉雪之下教会 (place_of_worship)</div>`)[0];
+                popup_2a00087afbace635dcee9d3823e9bc75.setContent(html_6b509127c34fa3cc82389862fd72b1e0);
+            
+        
+
+        marker_c208eaa1d0b05e8cd9ea2d145c6b6916.bindPopup(popup_2a00087afbace635dcee9d3823e9bc75)
+        ;
+
+        
+    
+    
+                marker_c208eaa1d0b05e8cd9ea2d145c6b6916.setIcon(icon_efde93221258311b7a2714e8a21afea3);
+            
+    
+            var marker_2fce96c248d47f2cab2fe06e672ad837 = L.marker(
+                [35.3143892, 139.5549699],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_4abc298aca993dc8632c362d4078db2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17f2e6de4193b7011f7de24f6b271f89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_082db7b9255c909847a6d812d76014b9 = $(`<div id="html_082db7b9255c909847a6d812d76014b9" style="width: 100.0%; height: 100.0%;">別願寺 (place_of_worship)</div>`)[0];
+                popup_17f2e6de4193b7011f7de24f6b271f89.setContent(html_082db7b9255c909847a6d812d76014b9);
+            
+        
+
+        marker_2fce96c248d47f2cab2fe06e672ad837.bindPopup(popup_17f2e6de4193b7011f7de24f6b271f89)
+        ;
+
+        
+    
+    
+                marker_2fce96c248d47f2cab2fe06e672ad837.setIcon(icon_4abc298aca993dc8632c362d4078db2a);
+            
+    
+            var marker_d1c04c2539035ef90d4a220ed2b4fc7f = L.marker(
+                [35.3140697, 139.5554188],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_ef88a0872dc8bbdd41af24bfa8066936 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_710236b008895ee49c5e15b46055b49a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cb6b83b07bd1cc1130081075c5faf5e = $(`<div id="html_4cb6b83b07bd1cc1130081075c5faf5e" style="width: 100.0%; height: 100.0%;">安養院 (place_of_worship)</div>`)[0];
+                popup_710236b008895ee49c5e15b46055b49a.setContent(html_4cb6b83b07bd1cc1130081075c5faf5e);
+            
+        
+
+        marker_d1c04c2539035ef90d4a220ed2b4fc7f.bindPopup(popup_710236b008895ee49c5e15b46055b49a)
+        ;
+
+        
+    
+    
+                marker_d1c04c2539035ef90d4a220ed2b4fc7f.setIcon(icon_ef88a0872dc8bbdd41af24bfa8066936);
+            
+    
+            var marker_32171356dd535f431f1f14fd5d16df9b = L.marker(
+                [35.3158179, 139.5543433],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_c40c3d260cf40a71e8b6f7f93973c9ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6aca27d0ccf4c2c3c2c0e708db8dbf7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75931e385a0548d3a9d9dcfb397fd22d = $(`<div id="html_75931e385a0548d3a9d9dcfb397fd22d" style="width: 100.0%; height: 100.0%;">常栄寺(ぼたもち寺) (place_of_worship)</div>`)[0];
+                popup_d6aca27d0ccf4c2c3c2c0e708db8dbf7.setContent(html_75931e385a0548d3a9d9dcfb397fd22d);
+            
+        
+
+        marker_32171356dd535f431f1f14fd5d16df9b.bindPopup(popup_d6aca27d0ccf4c2c3c2c0e708db8dbf7)
+        ;
+
+        
+    
+    
+                marker_32171356dd535f431f1f14fd5d16df9b.setIcon(icon_c40c3d260cf40a71e8b6f7f93973c9ba);
+            
+    
+            var marker_2513d94aa97c901c668589528d0ee63c = L.marker(
+                [35.3184974, 139.5527728],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_7e5c365cbc1135c430aa87ff7ee2cb20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a04ae14584ab223e3971ad22c57ecc0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b80c39bcf6403477eda529e028b3377 = $(`<div id="html_5b80c39bcf6403477eda529e028b3377" style="width: 100.0%; height: 100.0%;">大巧寺 (place_of_worship)</div>`)[0];
+                popup_9a04ae14584ab223e3971ad22c57ecc0.setContent(html_5b80c39bcf6403477eda529e028b3377);
+            
+        
+
+        marker_2513d94aa97c901c668589528d0ee63c.bindPopup(popup_9a04ae14584ab223e3971ad22c57ecc0)
+        ;
+
+        
+    
+    
+                marker_2513d94aa97c901c668589528d0ee63c.setIcon(icon_7e5c365cbc1135c430aa87ff7ee2cb20);
+            
+    
+            var marker_da5a4974b030e35a5d194468f5388460 = L.marker(
+                [35.3125402, 139.5517956],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_18c841f394a4e614070d6a4dba4e0434 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3808a3f5ce43724e2755d127d419f749 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d0315a01362b3b0d469ed8f2389134e = $(`<div id="html_7d0315a01362b3b0d469ed8f2389134e" style="width: 100.0%; height: 100.0%;">富士和教会 (place_of_worship)</div>`)[0];
+                popup_3808a3f5ce43724e2755d127d419f749.setContent(html_7d0315a01362b3b0d469ed8f2389134e);
+            
+        
+
+        marker_da5a4974b030e35a5d194468f5388460.bindPopup(popup_3808a3f5ce43724e2755d127d419f749)
+        ;
+
+        
+    
+    
+                marker_da5a4974b030e35a5d194468f5388460.setIcon(icon_18c841f394a4e614070d6a4dba4e0434);
+            
+    
+            var marker_48a2f4acdde1d374890ab3c7d96da661 = L.marker(
+                [35.3106676, 139.5528239],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_bdedabb967872039d468b63cafae1fc5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21d4d1993421cca94d44a6fa19d15916 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41a5e917b28040f79573ce9bb45b4493 = $(`<div id="html_41a5e917b28040f79573ce9bb45b4493" style="width: 100.0%; height: 100.0%;">哲運寺 (place_of_worship)</div>`)[0];
+                popup_21d4d1993421cca94d44a6fa19d15916.setContent(html_41a5e917b28040f79573ce9bb45b4493);
+            
+        
+
+        marker_48a2f4acdde1d374890ab3c7d96da661.bindPopup(popup_21d4d1993421cca94d44a6fa19d15916)
+        ;
+
+        
+    
+    
+                marker_48a2f4acdde1d374890ab3c7d96da661.setIcon(icon_bdedabb967872039d468b63cafae1fc5);
+            
+    
+            var marker_18dbbb77b66cff9ee76902c3c1e05539 = L.marker(
+                [35.3251108, 139.5498364],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_058b280a6de9503af97e166c45bf1bf8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b3ebc007f36895c741d8260b2472682 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8abdeb8902fec901520ecc87430f3921 = $(`<div id="html_8abdeb8902fec901520ecc87430f3921" style="width: 100.0%; height: 100.0%;">英勝寺 (place_of_worship)</div>`)[0];
+                popup_0b3ebc007f36895c741d8260b2472682.setContent(html_8abdeb8902fec901520ecc87430f3921);
+            
+        
+
+        marker_18dbbb77b66cff9ee76902c3c1e05539.bindPopup(popup_0b3ebc007f36895c741d8260b2472682)
+        ;
+
+        
+    
+    
+                marker_18dbbb77b66cff9ee76902c3c1e05539.setIcon(icon_058b280a6de9503af97e166c45bf1bf8);
+            
+    
+            var marker_028b8203b9ab430fe33cd5bd84c984df = L.marker(
+                [35.3127078, 139.5525613],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_5900d109e9f1c43e0fa037a8c136f147 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0775dc2360e87e22bf1440666141fbc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9b59fcdfd5b8aa348285404d1b0b345 = $(`<div id="html_b9b59fcdfd5b8aa348285404d1b0b345" style="width: 100.0%; height: 100.0%;">由比若宮(元八幡) (place_of_worship)</div>`)[0];
+                popup_0775dc2360e87e22bf1440666141fbc6.setContent(html_b9b59fcdfd5b8aa348285404d1b0b345);
+            
+        
+
+        marker_028b8203b9ab430fe33cd5bd84c984df.bindPopup(popup_0775dc2360e87e22bf1440666141fbc6)
+        ;
+
+        
+    
+    
+                marker_028b8203b9ab430fe33cd5bd84c984df.setIcon(icon_5900d109e9f1c43e0fa037a8c136f147);
+            
+    
+            var marker_eca7bf2b7a62f0770ecf80c440b0dfa4 = L.marker(
+                [35.3187174, 139.5542574],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_974760f84231b697ffa6448dc1fd9ee8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9bc835b981f7317ecca5423358832b6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8dc170a838cc2a8b6787f0da90bdf5c = $(`<div id="html_a8dc170a838cc2a8b6787f0da90bdf5c" style="width: 100.0%; height: 100.0%;">蛭子神社 (place_of_worship)</div>`)[0];
+                popup_9bc835b981f7317ecca5423358832b6a.setContent(html_a8dc170a838cc2a8b6787f0da90bdf5c);
+            
+        
+
+        marker_eca7bf2b7a62f0770ecf80c440b0dfa4.bindPopup(popup_9bc835b981f7317ecca5423358832b6a)
+        ;
+
+        
+    
+    
+                marker_eca7bf2b7a62f0770ecf80c440b0dfa4.setIcon(icon_974760f84231b697ffa6448dc1fd9ee8);
+            
+    
+            var marker_91b88e5454aa373dd4edfd0b760f2f41 = L.marker(
+                [35.3132425, 139.5485211],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_37d5defa8b8361d917332164eb6cacbf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2aece527377b7973bf92690ac9756cec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ea0228936347253c9b56777ac2a0d62 = $(`<div id="html_5ea0228936347253c9b56777ac2a0d62" style="width: 100.0%; height: 100.0%;">一の鳥居 (attraction)</div>`)[0];
+                popup_2aece527377b7973bf92690ac9756cec.setContent(html_5ea0228936347253c9b56777ac2a0d62);
+            
+        
+
+        marker_91b88e5454aa373dd4edfd0b760f2f41.bindPopup(popup_2aece527377b7973bf92690ac9756cec)
+        ;
+
+        
+    
+    
+                marker_91b88e5454aa373dd4edfd0b760f2f41.setIcon(icon_37d5defa8b8361d917332164eb6cacbf);
+            
+    
+            var marker_e51cea842ac1454f43c39a7088fae6ac = L.marker(
+                [35.3229806, 139.5523324],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_e0bcfcc9ba18a64180525aca2757f1a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_423402f1f750fc13fe81a69c1ea37263 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34daae962f9e67d86d2da73bdd49aa1a = $(`<div id="html_34daae962f9e67d86d2da73bdd49aa1a" style="width: 100.0%; height: 100.0%;">鏑木清方記念美術館 (museum)</div>`)[0];
+                popup_423402f1f750fc13fe81a69c1ea37263.setContent(html_34daae962f9e67d86d2da73bdd49aa1a);
+            
+        
+
+        marker_e51cea842ac1454f43c39a7088fae6ac.bindPopup(popup_423402f1f750fc13fe81a69c1ea37263)
+        ;
+
+        
+    
+    
+                marker_e51cea842ac1454f43c39a7088fae6ac.setIcon(icon_e0bcfcc9ba18a64180525aca2757f1a0);
+            
+    
+            var marker_4fec1feecb7d2dc21ed4b8b3e82e4ca5 = L.marker(
+                [35.3221019, 139.5612263],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_1eaed5b2babb0bc93858aef9a3fca6d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2579c27c9b59723902fee5829ff21b74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4718a5d921c400ed733472721ac9613d = $(`<div id="html_4718a5d921c400ed733472721ac9613d" style="width: 100.0%; height: 100.0%;">大倉稲荷社 (place_of_worship)</div>`)[0];
+                popup_2579c27c9b59723902fee5829ff21b74.setContent(html_4718a5d921c400ed733472721ac9613d);
+            
+        
+
+        marker_4fec1feecb7d2dc21ed4b8b3e82e4ca5.bindPopup(popup_2579c27c9b59723902fee5829ff21b74)
+        ;
+
+        
+    
+    
+                marker_4fec1feecb7d2dc21ed4b8b3e82e4ca5.setIcon(icon_1eaed5b2babb0bc93858aef9a3fca6d8);
+            
+    
+            var marker_3c644b34a75edf12cc07a825dc8cc682 = L.marker(
+                [35.3239039, 139.5559719],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_3aecae1737c195585f44bf2d8ba4b6e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d70fd2238e6970aad87fca6bee694ea4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_721993ec6a73d4d4b0da998621e16b70 = $(`<div id="html_721993ec6a73d4d4b0da998621e16b70" style="width: 100.0%; height: 100.0%;">旗上弁財天社 (place_of_worship)</div>`)[0];
+                popup_d70fd2238e6970aad87fca6bee694ea4.setContent(html_721993ec6a73d4d4b0da998621e16b70);
+            
+        
+
+        marker_3c644b34a75edf12cc07a825dc8cc682.bindPopup(popup_d70fd2238e6970aad87fca6bee694ea4)
+        ;
+
+        
+    
+    
+                marker_3c644b34a75edf12cc07a825dc8cc682.setIcon(icon_3aecae1737c195585f44bf2d8ba4b6e3);
+            
+    
+            var marker_eb90cf6402e82ad6d92b9a8bb5f91953 = L.marker(
+                [35.3207885, 139.5519476],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_4769de6c277f811279c7aa3453eb8522 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c5cd3b1b23e1048ae0745a5e2933b4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fed71488b204a8b635563181d0be7b4b = $(`<div id="html_fed71488b204a8b635563181d0be7b4b" style="width: 100.0%; height: 100.0%;">小町通り (attraction)</div>`)[0];
+                popup_7c5cd3b1b23e1048ae0745a5e2933b4d.setContent(html_fed71488b204a8b635563181d0be7b4b);
+            
+        
+
+        marker_eb90cf6402e82ad6d92b9a8bb5f91953.bindPopup(popup_7c5cd3b1b23e1048ae0745a5e2933b4d)
+        ;
+
+        
+    
+    
+                marker_eb90cf6402e82ad6d92b9a8bb5f91953.setIcon(icon_4769de6c277f811279c7aa3453eb8522);
+            
+    
+            var marker_488f2a10b4177df38665a14f4b054b77 = L.marker(
+                [35.3224054, 139.5475217],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_5d7564a07a452c463bc24f6f87c1bd03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e81595d1ebfde2144e86c755ccb1fdbb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5304515b2eb04d32c40424f1e117315d = $(`<div id="html_5304515b2eb04d32c40424f1e117315d" style="width: 100.0%; height: 100.0%;">鎌倉歴史文化交流館 (museum)</div>`)[0];
+                popup_e81595d1ebfde2144e86c755ccb1fdbb.setContent(html_5304515b2eb04d32c40424f1e117315d);
+            
+        
+
+        marker_488f2a10b4177df38665a14f4b054b77.bindPopup(popup_e81595d1ebfde2144e86c755ccb1fdbb)
+        ;
+
+        
+    
+    
+                marker_488f2a10b4177df38665a14f4b054b77.setIcon(icon_5d7564a07a452c463bc24f6f87c1bd03);
+            
+    
+            var marker_9c0c24ffe405c147d1efabe04b375269 = L.marker(
+                [35.3202741, 139.5524703],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_df5889bd3dea4f8e7a6f9ed96e35bbfe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf70f70d3c0c412dcf87cddd5ca10850 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60423e01b427608187d01e84e353fb4d = $(`<div id="html_60423e01b427608187d01e84e353fb4d" style="width: 100.0%; height: 100.0%;">お稲荷さん (place_of_worship)</div>`)[0];
+                popup_bf70f70d3c0c412dcf87cddd5ca10850.setContent(html_60423e01b427608187d01e84e353fb4d);
+            
+        
+
+        marker_9c0c24ffe405c147d1efabe04b375269.bindPopup(popup_bf70f70d3c0c412dcf87cddd5ca10850)
+        ;
+
+        
+    
+    
+                marker_9c0c24ffe405c147d1efabe04b375269.setIcon(icon_df5889bd3dea4f8e7a6f9ed96e35bbfe);
+            
+    
+            var marker_74d05fa0eefb9bb5efe02cbcb9f2f354 = L.marker(
+                [35.3226621, 139.5545516],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_dfe1ba11be2daf465d682032e588534e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8649e891f2bffd8d1b078cf5b145457a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0bd9a5ef6c5157cd614dc98473a9f25a = $(`<div id="html_0bd9a5ef6c5157cd614dc98473a9f25a" style="width: 100.0%; height: 100.0%;">BAM (museum)</div>`)[0];
+                popup_8649e891f2bffd8d1b078cf5b145457a.setContent(html_0bd9a5ef6c5157cd614dc98473a9f25a);
+            
+        
+
+        marker_74d05fa0eefb9bb5efe02cbcb9f2f354.bindPopup(popup_8649e891f2bffd8d1b078cf5b145457a)
+        ;
+
+        
+    
+    
+                marker_74d05fa0eefb9bb5efe02cbcb9f2f354.setIcon(icon_dfe1ba11be2daf465d682032e588534e);
+            
+    
+            var marker_53315e5aad0056be4f154c65db68ec99 = L.marker(
+                [35.3278271, 139.5543938],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_bd16f80fb6afc21912f1a8bc8736f547 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4969ff6ccdd60af0b6c7808318d3ed91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ebef7d77446f128f715c575f8881e7c = $(`<div id="html_6ebef7d77446f128f715c575f8881e7c" style="width: 100.0%; height: 100.0%;">青梅聖天社 (place_of_worship)</div>`)[0];
+                popup_4969ff6ccdd60af0b6c7808318d3ed91.setContent(html_6ebef7d77446f128f715c575f8881e7c);
+            
+        
+
+        marker_53315e5aad0056be4f154c65db68ec99.bindPopup(popup_4969ff6ccdd60af0b6c7808318d3ed91)
+        ;
+
+        
+    
+    
+                marker_53315e5aad0056be4f154c65db68ec99.setIcon(icon_bd16f80fb6afc21912f1a8bc8736f547);
+            
+    
+            var marker_59f5c6753979d11cb84bdca4297c3822 = L.marker(
+                [35.3222389, 139.5524326],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_e01b3a91e800d895303d2d9f539d4995 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8242399a9cc11610a4859b92881c0f78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ac67bc148d5e1d79409514a3c30a386 = $(`<div id="html_8ac67bc148d5e1d79409514a3c30a386" style="width: 100.0%; height: 100.0%;">鎌倉聖ミカエル教会 (place_of_worship)</div>`)[0];
+                popup_8242399a9cc11610a4859b92881c0f78.setContent(html_8ac67bc148d5e1d79409514a3c30a386);
+            
+        
+
+        marker_59f5c6753979d11cb84bdca4297c3822.bindPopup(popup_8242399a9cc11610a4859b92881c0f78)
+        ;
+
+        
+    
+    
+                marker_59f5c6753979d11cb84bdca4297c3822.setIcon(icon_e01b3a91e800d895303d2d9f539d4995);
+            
+    
+            var marker_c30f4d0dfdd69b04b37bf82816e991d9 = L.marker(
+                [35.3220494, 139.5503724],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_2369b84897006b1ff8a84eca48c23c07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_721f5fd4b98cbcbd849436e2455a725d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4a495e15f972c1259e218a997998762 = $(`<div id="html_d4a495e15f972c1259e218a997998762" style="width: 100.0%; height: 100.0%;">巽神社 (place_of_worship)</div>`)[0];
+                popup_721f5fd4b98cbcbd849436e2455a725d.setContent(html_d4a495e15f972c1259e218a997998762);
+            
+        
+
+        marker_c30f4d0dfdd69b04b37bf82816e991d9.bindPopup(popup_721f5fd4b98cbcbd849436e2455a725d)
+        ;
+
+        
+    
+    
+                marker_c30f4d0dfdd69b04b37bf82816e991d9.setIcon(icon_2369b84897006b1ff8a84eca48c23c07);
+            
+    
+            var marker_d70fd8c624c655e0af9cf459fe4ed82a = L.marker(
+                [35.3154502, 139.5489748],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_6f83f2a874f587263cfdf9983f6f01b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a705c05d7da3101acca2ad5a057b83f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2006e2d58687e9fa04c200d13a30560f = $(`<div id="html_2006e2d58687e9fa04c200d13a30560f" style="width: 100.0%; height: 100.0%;">日本基督教団鎌倉教会 (place_of_worship)</div>`)[0];
+                popup_a705c05d7da3101acca2ad5a057b83f6.setContent(html_2006e2d58687e9fa04c200d13a30560f);
+            
+        
+
+        marker_d70fd8c624c655e0af9cf459fe4ed82a.bindPopup(popup_a705c05d7da3101acca2ad5a057b83f6)
+        ;
+
+        
+    
+    
+                marker_d70fd8c624c655e0af9cf459fe4ed82a.setIcon(icon_6f83f2a874f587263cfdf9983f6f01b7);
+            
+    
+            var marker_a4df483fd1311422f8efac9df6f85dbb = L.marker(
+                [35.32383, 139.5502318],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_f7f71dce0e24647097c6388e50b357ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14b212360799c063da1857427d252f56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d919c51a59eb525f95b9ae60acdf84e = $(`<div id="html_6d919c51a59eb525f95b9ae60acdf84e" style="width: 100.0%; height: 100.0%;">八坂大神社 (place_of_worship)</div>`)[0];
+                popup_14b212360799c063da1857427d252f56.setContent(html_6d919c51a59eb525f95b9ae60acdf84e);
+            
+        
+
+        marker_a4df483fd1311422f8efac9df6f85dbb.bindPopup(popup_14b212360799c063da1857427d252f56)
+        ;
+
+        
+    
+    
+                marker_a4df483fd1311422f8efac9df6f85dbb.setIcon(icon_f7f71dce0e24647097c6388e50b357ce);
+            
+    
+            var marker_eff91527b059910b7938d8eedf530754 = L.marker(
+                [35.3158056, 139.5524785],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_e29d82f754ba6e7eee621823ff31026c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f512bea92ae0cf4ef4438f1984be37d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bebcd627f5d87daf4229e0e5cd4e1841 = $(`<div id="html_bebcd627f5d87daf4229e0e5cd4e1841" style="width: 100.0%; height: 100.0%;">教恩寺 (place_of_worship)</div>`)[0];
+                popup_f512bea92ae0cf4ef4438f1984be37d6.setContent(html_bebcd627f5d87daf4229e0e5cd4e1841);
+            
+        
+
+        marker_eff91527b059910b7938d8eedf530754.bindPopup(popup_f512bea92ae0cf4ef4438f1984be37d6)
+        ;
+
+        
+    
+    
+                marker_eff91527b059910b7938d8eedf530754.setIcon(icon_e29d82f754ba6e7eee621823ff31026c);
+            
+    
+            var marker_f7f864d0d5be3768f8d23dc27a099525 = L.marker(
+                [35.3153205, 139.5572917],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_7572118416f776d4c52446da353d5047 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0da580faf17de6373a834c04ed9c4ca5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f7ea5e62958b87e0fab2b39ee50ed35 = $(`<div id="html_1f7ea5e62958b87e0fab2b39ee50ed35" style="width: 100.0%; height: 100.0%;">大寶寺 (place_of_worship)</div>`)[0];
+                popup_0da580faf17de6373a834c04ed9c4ca5.setContent(html_1f7ea5e62958b87e0fab2b39ee50ed35);
+            
+        
+
+        marker_f7f864d0d5be3768f8d23dc27a099525.bindPopup(popup_0da580faf17de6373a834c04ed9c4ca5)
+        ;
+
+        
+    
+    
+                marker_f7f864d0d5be3768f8d23dc27a099525.setIcon(icon_7572118416f776d4c52446da353d5047);
+            
+    
+            var marker_2ef447fd21ee441a595cebee53d9d0fd = L.marker(
+                [35.3249095, 139.5510335],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_a9b4346523c8f5eff97eda27ff04f031 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6306261c10aa5732a9702ef40a4ab662 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6bfffb19304a608b2e1ad0d83015d48b = $(`<div id="html_6bfffb19304a608b2e1ad0d83015d48b" style="width: 100.0%; height: 100.0%;">護国寺 (place_of_worship)</div>`)[0];
+                popup_6306261c10aa5732a9702ef40a4ab662.setContent(html_6bfffb19304a608b2e1ad0d83015d48b);
+            
+        
+
+        marker_2ef447fd21ee441a595cebee53d9d0fd.bindPopup(popup_6306261c10aa5732a9702ef40a4ab662)
+        ;
+
+        
+    
+    
+                marker_2ef447fd21ee441a595cebee53d9d0fd.setIcon(icon_a9b4346523c8f5eff97eda27ff04f031);
+            
+    
+            var marker_903b3fbd60a2a04d164bf343f7220690 = L.marker(
+                [35.3251471, 139.5567491],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_79bc45b651c40fe20371db2b8d953b9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9dcf870dd3ffeeae0b6a9af19493208 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cf179de46fed00d338f709970595417 = $(`<div id="html_4cf179de46fed00d338f709970595417" style="width: 100.0%; height: 100.0%;">由比若宮遙拝所 (place_of_worship)</div>`)[0];
+                popup_e9dcf870dd3ffeeae0b6a9af19493208.setContent(html_4cf179de46fed00d338f709970595417);
+            
+        
+
+        marker_903b3fbd60a2a04d164bf343f7220690.bindPopup(popup_e9dcf870dd3ffeeae0b6a9af19493208)
+        ;
+
+        
+    
+    
+                marker_903b3fbd60a2a04d164bf343f7220690.setIcon(icon_79bc45b651c40fe20371db2b8d953b9f);
+            
+    
+            var marker_ee095287de53fc6bb335e5129db97cb9 = L.marker(
+                [35.3204156, 139.552062],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_fffc68bdb5a039801cecae82a6981dc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d3f6a9af49e9c83fc285618aee82295 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78edb086b1ae3b53a0fc63395ddeded2 = $(`<div id="html_78edb086b1ae3b53a0fc63395ddeded2" style="width: 100.0%; height: 100.0%;">吉兆庵美術館 (museum)</div>`)[0];
+                popup_7d3f6a9af49e9c83fc285618aee82295.setContent(html_78edb086b1ae3b53a0fc63395ddeded2);
+            
+        
+
+        marker_ee095287de53fc6bb335e5129db97cb9.bindPopup(popup_7d3f6a9af49e9c83fc285618aee82295)
+        ;
+
+        
+    
+    
+                marker_ee095287de53fc6bb335e5129db97cb9.setIcon(icon_fffc68bdb5a039801cecae82a6981dc4);
+            
+    
+            var marker_3a90428fbc8713b5cc8b5ae9b68d7f99 = L.marker(
+                [35.318193, 139.545024],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_115bbffc22d29d92933b81ab2213680e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21206ed699269b714a7d7d9cb599f269 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0dc9643c28dd94562cf38573ba46f56 = $(`<div id="html_d0dc9643c28dd94562cf38573ba46f56" style="width: 100.0%; height: 100.0%;">鎌倉大谷記念美術館(休館) (museum)</div>`)[0];
+                popup_21206ed699269b714a7d7d9cb599f269.setContent(html_d0dc9643c28dd94562cf38573ba46f56);
+            
+        
+
+        marker_3a90428fbc8713b5cc8b5ae9b68d7f99.bindPopup(popup_21206ed699269b714a7d7d9cb599f269)
+        ;
+
+        
+    
+    
+                marker_3a90428fbc8713b5cc8b5ae9b68d7f99.setIcon(icon_115bbffc22d29d92933b81ab2213680e);
+            
+    
+            var marker_9caab9b9785ada620a7ae1524fb5806c = L.marker(
+                [35.324866, 139.556311],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_276d5b0280f0461b7b518bf6bd1b71ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab061f5a563418e68c1ee8c44d415ab8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6a8e745f661efbb6c1013e753bdb6b7 = $(`<div id="html_f6a8e745f661efbb6c1013e753bdb6b7" style="width: 100.0%; height: 100.0%;">鶴岡八幡宮宝物殿 (museum)</div>`)[0];
+                popup_ab061f5a563418e68c1ee8c44d415ab8.setContent(html_f6a8e745f661efbb6c1013e753bdb6b7);
+            
+        
+
+        marker_9caab9b9785ada620a7ae1524fb5806c.bindPopup(popup_ab061f5a563418e68c1ee8c44d415ab8)
+        ;
+
+        
+    
+    
+                marker_9caab9b9785ada620a7ae1524fb5806c.setIcon(icon_276d5b0280f0461b7b518bf6bd1b71ab);
+            
+    
+            var marker_bd79a4e085318344ffb71c81da134bec = L.marker(
+                [35.3202564, 139.5538865],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_6b5837acd82c423d172f4cde821a57e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_275d56c5f7eb623434b24d20fbf98e03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3d3b81b56bc8de06ab36a559811d6c0 = $(`<div id="html_f3d3b81b56bc8de06ab36a559811d6c0" style="width: 100.0%; height: 100.0%;">宇都宮稲荷 (place_of_worship)</div>`)[0];
+                popup_275d56c5f7eb623434b24d20fbf98e03.setContent(html_f3d3b81b56bc8de06ab36a559811d6c0);
+            
+        
+
+        marker_bd79a4e085318344ffb71c81da134bec.bindPopup(popup_275d56c5f7eb623434b24d20fbf98e03)
+        ;
+
+        
+    
+    
+                marker_bd79a4e085318344ffb71c81da134bec.setIcon(icon_6b5837acd82c423d172f4cde821a57e6);
+            
+    
+            var marker_5524ae7406ae0779847aa7c21dbb0c2c = L.marker(
+                [35.3212765, 139.5595355],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_88c84bb969e127113f3e029015a5299f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb23569173fba5f43548e82791f31d03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1a29e36006c5966d1d560e1feabfede = $(`<div id="html_a1a29e36006c5966d1d560e1feabfede" style="width: 100.0%; height: 100.0%;">レデンプトリスチン修道院 (place_of_worship)</div>`)[0];
+                popup_eb23569173fba5f43548e82791f31d03.setContent(html_a1a29e36006c5966d1d560e1feabfede);
+            
+        
+
+        marker_5524ae7406ae0779847aa7c21dbb0c2c.bindPopup(popup_eb23569173fba5f43548e82791f31d03)
+        ;
+
+        
+    
+    
+                marker_5524ae7406ae0779847aa7c21dbb0c2c.setIcon(icon_88c84bb969e127113f3e029015a5299f);
+            
+    
+            var marker_b949c3d6c1b1eee610b0111637d0eabe = L.marker(
+                [35.3243223, 139.5501094],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_e099b37af452f0a9006d8e1aeb38b89b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_898852c32405e221e6f3802aa9c55a3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06cfccbf6187350447208c37a91e8073 = $(`<div id="html_06cfccbf6187350447208c37a91e8073" style="width: 100.0%; height: 100.0%;">寿福寺 (place_of_worship)</div>`)[0];
+                popup_898852c32405e221e6f3802aa9c55a3d.setContent(html_06cfccbf6187350447208c37a91e8073);
+            
+        
+
+        marker_b949c3d6c1b1eee610b0111637d0eabe.bindPopup(popup_898852c32405e221e6f3802aa9c55a3d)
+        ;
+
+        
+    
+    
+                marker_b949c3d6c1b1eee610b0111637d0eabe.setIcon(icon_e099b37af452f0a9006d8e1aeb38b89b);
+            
+    
+            var marker_56c6d55d44838599b9ac60e6545a6e66 = L.marker(
+                [35.3264324, 139.5511764],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_302f24acddd37d7a541a1a7c7f42eada = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44a45c947747368ec062e9f9a6c18e87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26038773bfc20d0422567a131b157634 = $(`<div id="html_26038773bfc20d0422567a131b157634" style="width: 100.0%; height: 100.0%;">浄光明寺 (place_of_worship)</div>`)[0];
+                popup_44a45c947747368ec062e9f9a6c18e87.setContent(html_26038773bfc20d0422567a131b157634);
+            
+        
+
+        marker_56c6d55d44838599b9ac60e6545a6e66.bindPopup(popup_44a45c947747368ec062e9f9a6c18e87)
+        ;
+
+        
+    
+    
+                marker_56c6d55d44838599b9ac60e6545a6e66.setIcon(icon_302f24acddd37d7a541a1a7c7f42eada);
+            
+    
+            var marker_45a8087141cb44efdaf9147bf992f993 = L.marker(
+                [35.3240898, 139.551448],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_8bd59af7c031de64513802f2377ac99c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c8902009cd222838c584b38c3ee749f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5aaa7198052298e495e75f2d9636ae18 = $(`<div id="html_5aaa7198052298e495e75f2d9636ae18" style="width: 100.0%; height: 100.0%;">岩船不動尊 (place_of_worship)</div>`)[0];
+                popup_7c8902009cd222838c584b38c3ee749f.setContent(html_5aaa7198052298e495e75f2d9636ae18);
+            
+        
+
+        marker_45a8087141cb44efdaf9147bf992f993.bindPopup(popup_7c8902009cd222838c584b38c3ee749f)
+        ;
+
+        
+    
+    
+                marker_45a8087141cb44efdaf9147bf992f993.setIcon(icon_8bd59af7c031de64513802f2377ac99c);
+            
+    
+            var marker_c1726ea7f78c87ed9039fd1a292d35c8 = L.marker(
+                [35.3147638, 139.5554223],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_729fbdaec4b6c057fa7745c16a3a1d8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0d3bad2b912fab5d1ea958de5407cb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_190063a2532492b98a6acd98452a4d7c = $(`<div id="html_190063a2532492b98a6acd98452a4d7c" style="width: 100.0%; height: 100.0%;">祇園山見晴台 (viewpoint)</div>`)[0];
+                popup_a0d3bad2b912fab5d1ea958de5407cb4.setContent(html_190063a2532492b98a6acd98452a4d7c);
+            
+        
+
+        marker_c1726ea7f78c87ed9039fd1a292d35c8.bindPopup(popup_a0d3bad2b912fab5d1ea958de5407cb4)
+        ;
+
+        
+    
+    
+                marker_c1726ea7f78c87ed9039fd1a292d35c8.setIcon(icon_729fbdaec4b6c057fa7745c16a3a1d8f);
+            
+    
+            var marker_b73da01270d77d693f29295997a8108a = L.marker(
+                [35.3253984, 139.5538545],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_e60ba5dd0ddd0caddee8b60e9aa0f0bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57864338700d27ed799148b4c7b13f85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f47ad9ba338151dd53835c9042779974 = $(`<div id="html_f47ad9ba338151dd53835c9042779974" style="width: 100.0%; height: 100.0%;">志一稲荷社 (place_of_worship)</div>`)[0];
+                popup_57864338700d27ed799148b4c7b13f85.setContent(html_f47ad9ba338151dd53835c9042779974);
+            
+        
+
+        marker_b73da01270d77d693f29295997a8108a.bindPopup(popup_57864338700d27ed799148b4c7b13f85)
+        ;
+
+        
+    
+    
+                marker_b73da01270d77d693f29295997a8108a.setIcon(icon_e60ba5dd0ddd0caddee8b60e9aa0f0bf);
+            
+    
+            var marker_d59d92718025146e1eb288ec39dd5f8b = L.marker(
+                [35.3272126, 139.5564475],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_3dcf6abad39acced808789a899178d46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e272a97bc6ed7e908a1a9725ce4964e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be86a93b1a4a8c65a815fe00c5070d16 = $(`<div id="html_be86a93b1a4a8c65a815fe00c5070d16" style="width: 100.0%; height: 100.0%;">鶴岡文庫 (museum)</div>`)[0];
+                popup_5e272a97bc6ed7e908a1a9725ce4964e.setContent(html_be86a93b1a4a8c65a815fe00c5070d16);
+            
+        
+
+        marker_d59d92718025146e1eb288ec39dd5f8b.bindPopup(popup_5e272a97bc6ed7e908a1a9725ce4964e)
+        ;
+
+        
+    
+    
+                marker_d59d92718025146e1eb288ec39dd5f8b.setIcon(icon_3dcf6abad39acced808789a899178d46);
+            
+    
+            var marker_cb610a696ff46a6899f201958b3b9c1b = L.marker(
+                [35.3271722, 139.5491412],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_36e980288812d1c35568ed66909ceb20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd860fe6a539fd6ae38109fbb3b9802b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93bf89e38148e01575bab16bdc73de88 = $(`<div id="html_93bf89e38148e01575bab16bdc73de88" style="width: 100.0%; height: 100.0%;">岩船地蔵堂 (place_of_worship)</div>`)[0];
+                popup_dd860fe6a539fd6ae38109fbb3b9802b.setContent(html_93bf89e38148e01575bab16bdc73de88);
+            
+        
+
+        marker_cb610a696ff46a6899f201958b3b9c1b.bindPopup(popup_dd860fe6a539fd6ae38109fbb3b9802b)
+        ;
+
+        
+    
+    
+                marker_cb610a696ff46a6899f201958b3b9c1b.setIcon(icon_36e980288812d1c35568ed66909ceb20);
+            
+    
+            var marker_0ab720fcae25bcc8ee2d8c647232398c = L.marker(
+                [35.3228615, 139.5503529],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_8a35040571cc26af96abd75c922a282d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f831528726b59fd8fefaf8eccba5149 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fbd24d6f4c5ed950ed11780a5df8c33 = $(`<div id="html_8fbd24d6f4c5ed950ed11780a5df8c33" style="width: 100.0%; height: 100.0%;">正宗稲荷社 (place_of_worship)</div>`)[0];
+                popup_2f831528726b59fd8fefaf8eccba5149.setContent(html_8fbd24d6f4c5ed950ed11780a5df8c33);
+            
+        
+
+        marker_0ab720fcae25bcc8ee2d8c647232398c.bindPopup(popup_2f831528726b59fd8fefaf8eccba5149)
+        ;
+
+        
+    
+    
+                marker_0ab720fcae25bcc8ee2d8c647232398c.setIcon(icon_8a35040571cc26af96abd75c922a282d);
+            
+    
+            var marker_3442632f28776211bd32648f802b6eea = L.marker(
+                [35.3128455, 139.5531966],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_ddc4f7c147758b47cefdb63b13ce19e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bc0e2e5dc96e87b6a703f13e9b93d7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6612c2764b1c40f79ac23747d14ab96 = $(`<div id="html_e6612c2764b1c40f79ac23747d14ab96" style="width: 100.0%; height: 100.0%;">辻薬師堂 (place_of_worship)</div>`)[0];
+                popup_2bc0e2e5dc96e87b6a703f13e9b93d7d.setContent(html_e6612c2764b1c40f79ac23747d14ab96);
+            
+        
+
+        marker_3442632f28776211bd32648f802b6eea.bindPopup(popup_2bc0e2e5dc96e87b6a703f13e9b93d7d)
+        ;
+
+        
+    
+    
+                marker_3442632f28776211bd32648f802b6eea.setIcon(icon_ddc4f7c147758b47cefdb63b13ce19e5);
+            
+    
+            var marker_977eddc87301560b0e36fd4e68147b86 = L.marker(
+                [35.3206869, 139.5549363],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_64f9853a1ee3061ed57c1b88bd8656dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6f4ba25b210243b9c30b25b21a0ff55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8254ef9b8436086e4944868cb93b6be8 = $(`<div id="html_8254ef9b8436086e4944868cb93b6be8" style="width: 100.0%; height: 100.0%;">妙隆寺 (place_of_worship)</div>`)[0];
+                popup_b6f4ba25b210243b9c30b25b21a0ff55.setContent(html_8254ef9b8436086e4944868cb93b6be8);
+            
+        
+
+        marker_977eddc87301560b0e36fd4e68147b86.bindPopup(popup_b6f4ba25b210243b9c30b25b21a0ff55)
+        ;
+
+        
+    
+    
+                marker_977eddc87301560b0e36fd4e68147b86.setIcon(icon_64f9853a1ee3061ed57c1b88bd8656dc);
+            
+    
+            var marker_2ea25ed06f43f57fed3ac83734cbc1c9 = L.marker(
+                [35.3206187, 139.5533814],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_7fc801118eb3da457ae9547763517e87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22e006b5aa36d68cbcc00faf5765f610 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e3b7a0fd7706b050229cd53b16da446 = $(`<div id="html_3e3b7a0fd7706b050229cd53b16da446" style="width: 100.0%; height: 100.0%;">カトリック雪ノ下教会 (place_of_worship)</div>`)[0];
+                popup_22e006b5aa36d68cbcc00faf5765f610.setContent(html_3e3b7a0fd7706b050229cd53b16da446);
+            
+        
+
+        marker_2ea25ed06f43f57fed3ac83734cbc1c9.bindPopup(popup_22e006b5aa36d68cbcc00faf5765f610)
+        ;
+
+        
+    
+    
+                marker_2ea25ed06f43f57fed3ac83734cbc1c9.setIcon(icon_7fc801118eb3da457ae9547763517e87);
+            
+    
+            var marker_132c1bc6773e99aa10a413a0e9cf7811 = L.marker(
+                [35.3212533, 139.5600587],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_abcc228c97ec91ffe623666b257e7316 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e40d147311dd4c376b25e280548a2e66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fc564668981d1ed505f3336ee6094e2 = $(`<div id="html_0fc564668981d1ed505f3336ee6094e2" style="width: 100.0%; height: 100.0%;">太神宮 (place_of_worship)</div>`)[0];
+                popup_e40d147311dd4c376b25e280548a2e66.setContent(html_0fc564668981d1ed505f3336ee6094e2);
+            
+        
+
+        marker_132c1bc6773e99aa10a413a0e9cf7811.bindPopup(popup_e40d147311dd4c376b25e280548a2e66)
+        ;
+
+        
+    
+    
+                marker_132c1bc6773e99aa10a413a0e9cf7811.setIcon(icon_abcc228c97ec91ffe623666b257e7316);
+            
+    
+            var marker_54e5bf97b96e1537631a3d46b5c72b81 = L.marker(
+                [35.3150473, 139.5548131],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_7f5c97a734b19d46ec02c340e5396512 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5adff4a67c00764279f3ea8da8a3d555 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87bd227981dc080e0342ba5740cbe4b4 = $(`<div id="html_87bd227981dc080e0342ba5740cbe4b4" style="width: 100.0%; height: 100.0%;">三峰神社　御嶽神社 (place_of_worship)</div>`)[0];
+                popup_5adff4a67c00764279f3ea8da8a3d555.setContent(html_87bd227981dc080e0342ba5740cbe4b4);
+            
+        
+
+        marker_54e5bf97b96e1537631a3d46b5c72b81.bindPopup(popup_5adff4a67c00764279f3ea8da8a3d555)
+        ;
+
+        
+    
+    
+                marker_54e5bf97b96e1537631a3d46b5c72b81.setIcon(icon_7f5c97a734b19d46ec02c340e5396512);
+            
+    
+            var marker_4fbe85c05d04773dd45b98e830cda5b6 = L.marker(
+                [35.3242675, 139.5524688],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_0e180b0cff6d29345167919ac47d59b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3f6c6fad8419c09ba90cdd79cc9ce16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98557e76ae3802d8bdce6b3e39501a22 = $(`<div id="html_98557e76ae3802d8bdce6b3e39501a22" style="width: 100.0%; height: 100.0%;">川喜多映画記念館 (museum)</div>`)[0];
+                popup_c3f6c6fad8419c09ba90cdd79cc9ce16.setContent(html_98557e76ae3802d8bdce6b3e39501a22);
+            
+        
+
+        marker_4fbe85c05d04773dd45b98e830cda5b6.bindPopup(popup_c3f6c6fad8419c09ba90cdd79cc9ce16)
+        ;
+
+        
+    
+    
+                marker_4fbe85c05d04773dd45b98e830cda5b6.setIcon(icon_0e180b0cff6d29345167919ac47d59b8);
+            
+    
+            var marker_fecc828c0a46ab7b0e2bef6ad59b6781 = L.marker(
+                [35.3127936, 139.5540021],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_598238975642f622cc91d3cf21f56801 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_005b6246e7d3b4823a662c67f09fe6a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33868afdebc97286a43fbd8a15cda2a4 = $(`<div id="html_33868afdebc97286a43fbd8a15cda2a4" style="width: 100.0%; height: 100.0%;">本興寺 (place_of_worship)</div>`)[0];
+                popup_005b6246e7d3b4823a662c67f09fe6a7.setContent(html_33868afdebc97286a43fbd8a15cda2a4);
+            
+        
+
+        marker_fecc828c0a46ab7b0e2bef6ad59b6781.bindPopup(popup_005b6246e7d3b4823a662c67f09fe6a7)
+        ;
+
+        
+    
+    
+                marker_fecc828c0a46ab7b0e2bef6ad59b6781.setIcon(icon_598238975642f622cc91d3cf21f56801);
+            
+    
+            var marker_d30e6b51f71b27bdd7ae76d22a8f7432 = L.marker(
+                [35.3150749, 139.5460794],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_f65f31d1dca0d52555c54fd08163d189 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a49f9a9ace38e1e9705f3d43f4f694d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7be9a98007a7d301ad56124289367f91 = $(`<div id="html_7be9a98007a7d301ad56124289367f91" style="width: 100.0%; height: 100.0%;">Calvary Chapel Kamakura (place_of_worship)</div>`)[0];
+                popup_a49f9a9ace38e1e9705f3d43f4f694d6.setContent(html_7be9a98007a7d301ad56124289367f91);
+            
+        
+
+        marker_d30e6b51f71b27bdd7ae76d22a8f7432.bindPopup(popup_a49f9a9ace38e1e9705f3d43f4f694d6)
+        ;
+
+        
+    
+    
+                marker_d30e6b51f71b27bdd7ae76d22a8f7432.setIcon(icon_f65f31d1dca0d52555c54fd08163d189);
+            
+    
+            var marker_eb119401ce6549b12dd09e83ab730b4b = L.marker(
+                [35.3171792, 139.5572259],
+                {
+}
+            ).addTo(map_6b4a48661454590e4d57c5763b91ac76);
+        
+    
+            var icon_af088456a7988d953211cb7968176c90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67c34d47a500f366b89919e055cf94b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71cc7f07c15e13f7ca1c501792667fc1 = $(`<div id="html_71cc7f07c15e13f7ca1c501792667fc1" style="width: 100.0%; height: 100.0%;">妙本寺 (place_of_worship)</div>`)[0];
+                popup_67c34d47a500f366b89919e055cf94b5.setContent(html_71cc7f07c15e13f7ca1c501792667fc1);
+            
+        
+
+        marker_eb119401ce6549b12dd09e83ab730b4b.bindPopup(popup_67c34d47a500f366b89919e055cf94b5)
+        ;
+
+        
+    
+    
+                marker_eb119401ce6549b12dd09e83ab730b4b.setIcon(icon_af088456a7988d953211cb7968176c90);
+            
+</script>
+</html>
